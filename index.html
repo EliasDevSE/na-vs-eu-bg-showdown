@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NA vs EU | Battlegrounds Tournament</title>
+  <meta name="description" content="16 Hearthstone Battlegrounds players, only 1 winner to bring glory to their region. NA vs EU, September 4-6, live on Twitch." />
+  <meta property="og:title" content="NA vs EU | Battlegrounds Tournament" />
+  <meta property="og:description" content="North America vs Europe. One Hearthstone Battlegrounds tournament. Watch live." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <span class="nav-logo" aria-hidden="true">
+          <img class="tilt-l" src="assets/ui/na.png" alt="" />
+          <img class="vs-mini" src="assets/ui/vs.png" alt="" />
+          <img class="tilt-r" src="assets/ui/eu.png" alt="" />
+        </span>
+        NA <span class="vs">vs</span> EU
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#players">Players</a></li>
+        <li><a href="#format">Format</a></li>
+        <li><a href="#standings">Standings</a></li>
+        <li><a href="#prizes">Prizes</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#watch">Watch</a></li>
+      </ul>
+      <a href="#watch" class="btn btn-primary">Watch Live</a>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+      <span class="hero-badge">Hearthstone Battlegrounds</span>
+      <h1 class="hero-title visually-hidden">NA vs EU Battlegrounds Tournament</h1>
+      <div class="hero-emblems" aria-hidden="true">
+        <img class="emblem region" src="assets/ui/na.png" alt="North America" />
+        <img class="emblem vs-badge" src="assets/ui/vs.png" alt="versus" />
+        <img class="emblem region" src="assets/ui/eu.png" alt="Europe" />
+      </div>
+      <p class="hero-sub">Battlegrounds Tournament</p>
+      <p class="hero-tag">16 players, only 1 winner to bring glory to their region!</p>
+      <div class="hero-date" data-event="2026-09-04T16:00:00Z">Friday, September 4 · 2026</div>
+      <div class="countdown" id="countdown" aria-label="Time until the tournament">
+        <div class="count-box"><div class="num" data-c="days">--</div><div class="lbl">Days</div></div>
+        <div class="count-box"><div class="num" data-c="hours">--</div><div class="lbl">Hours</div></div>
+        <div class="count-box"><div class="num" data-c="mins">--</div><div class="lbl">Mins</div></div>
+        <div class="count-box"><div class="num" data-c="secs">--</div><div class="lbl">Secs</div></div>
+      </div>
+      <div class="hero-cta">
+        <a href="https://twitch.tv/shadybunny" target="_blank" rel="noopener" class="btn btn-live live-reveal" hidden>&#9679; Live Now</a>
+        <a href="#watch" class="btn btn-primary">Watch Live</a>
+        <a href="event.ics" download="na-vs-eu-battlegrounds-tournament.ics" class="btn btn-ghost">&#128197; Add to Calendar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section parchment" id="players">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>The Players</h2>
+        <div class="flourish"></div>
+      </div>
+
+      <div class="roster-group reveal">
+        <div class="divider-label na"><span>Group 1 · North America</span></div>
+        <div class="hero-grid">
+          <div class="bg-hero"><img src="assets/heroes/jeef.png" alt="Jeef"></div>
+          <div class="bg-hero"><img src="assets/heroes/beter.png" alt="Beter"></div>
+          <div class="bg-hero"><img src="assets/heroes/tbd.png" alt="Xiaoliaoo"><div class="bg-hero-name">Xiaoliaoo</div></div>
+          <div class="bg-hero"><img src="assets/heroes/tbd.png" alt="Awedragon"><div class="bg-hero-name">Awedragon</div></div>
+          <div class="bg-hero"><img src="assets/heroes/tbd.png" alt="Rechot"><div class="bg-hero-name">Rechot</div></div>
+          <div class="bg-hero"><img src="assets/heroes/tbd.png" alt="To be announced"></div>
+          <div class="bg-hero"><img src="assets/heroes/tbd.png" alt="To be announced"></div>
+          <div class="bg-hero"><img src="assets/heroes/tbd.png" alt="To be announced"></div>
+        </div>
+      </div>
+
+      <div class="roster-group reveal">
+        <div class="divider-label eu"><span>Group 2 · Europe</span></div>
+        <div class="hero-grid">
+          <div class="bg-hero"><img src="assets/heroes/rdu.png" alt="Rdu"></div>
+          <div class="bg-hero"><img src="assets/heroes/superjj.png" alt="SuperJJ"></div>
+          <div class="bg-hero"><img src="assets/heroes/slyders.png" alt="Slyders"></div>
+          <div class="bg-hero"><img src="assets/heroes/zorgo.png" alt="Zorgo"></div>
+          <div class="bg-hero"><img src="assets/heroes/oliech.png" alt="Oliech"></div>
+          <div class="bg-hero"><img src="assets/heroes/tbd.png" alt="XQN"><div class="bg-hero-name">XQN</div></div>
+          <div class="bg-hero"><img src="assets/heroes/tbd.png" alt="To be announced"></div>
+          <div class="bg-hero"><img src="assets/heroes/tbd.png" alt="To be announced"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section parchment" id="format">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Format</h2>
+        <div class="flourish"></div>
+      </div>
+      <div class="format-grid">
+        <div class="parch-card reveal">
+          <h3>How It Works</h3>
+          <ol class="steps">
+            <li><span class="n">1</span><div><b>Friday: Group 1</b><p>Group 1 plays <strong>7 games</strong>. The top 4 contestants advance to the finals on Sunday.</p></div></li>
+            <li><span class="n">2</span><div><b>Saturday: Group 2</b><p>We repeat the same for Group 2: 7 games, top 4 advance to the finals.</p></div></li>
+            <li><span class="n">3</span><div><b>Sunday: Finals, check format</b><p>Players that reach <strong>30 points</strong> put the lobby in check. The first of these players to win a lobby wins the tournament! You need 30 points at the <em>start</em> of a game, so reaching 30 while winning a lobby doesn't count.</p></div></li>
+            <li><span class="n">4</span><div><b>Finals scoring</b><p>Placement points remain largely the same during the finals, but first place is awarded <strong>10</strong> points and second place <strong>8</strong>.</p></div></li>
+          </ol>
+        </div>
+        <div class="parch-card reveal">
+          <h3>Placement Points</h3>
+          <table class="points-table">
+            <thead><tr><th>Finish</th><th>Points</th></tr></thead>
+            <tbody>
+              <tr><td>1st place</td><td class="pts">9</td></tr>
+              <tr><td>2nd place</td><td class="pts">7</td></tr>
+              <tr><td>3rd place</td><td class="pts">6</td></tr>
+              <tr><td>4th place</td><td class="pts">5</td></tr>
+              <tr><td>5th place</td><td class="pts">4</td></tr>
+              <tr><td>6th place</td><td class="pts">3</td></tr>
+              <tr><td>7th place</td><td class="pts">2</td></tr>
+              <tr><td>8th place</td><td class="pts">1</td></tr>
+            </tbody>
+          </table>
+          <p class="table-note">Finals: 1st place scores <strong>10</strong>, 2nd place scores <strong>8</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="standings">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Live During The Tournament</p>
+        <h2>Current Placement</h2>
+        <div class="flourish"></div>
+        <p id="standingsStage">Standings will appear here once the games begin.</p>
+      </div>
+      <ol class="standings-list reveal" id="standingsList"></ol>
+    </div>
+  </section>
+
+  <section class="section dark" id="prizes">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">What's On The Line</p>
+        <h2>Prize Pool</h2>
+        <div class="flourish"></div>
+        <p>We have contributed <strong>$2,500</strong> to the prize pool ourselves. If you'd like to support the tournament and the players, we've opened up donations to contribute to the prize pool.</p>
+      </div>
+      <div class="prize-total reveal">
+        <div class="amount" id="poolAmount">&hellip;</div>
+        <div class="label">Current Prize Pool</div>
+        <a class="btn btn-primary donate-btn" href="https://streamelements.com/shadybunny/tip" target="_blank" rel="noopener">Donate to the Prize Pool</a>
+      </div>
+      <div class="prize-list">
+        <div class="prize-row gold reveal"><div class="rank medal medal-gold" aria-label="Gold medal"></div><div class="desc">First Place<small>+ 60% of all extra donations</small></div><div class="val">$1,500</div></div>
+        <div class="prize-row silver reveal"><div class="rank medal medal-silver" aria-label="Silver medal"></div><div class="desc">Second Place<small>+ 25% of all extra donations</small></div><div class="val">$625</div></div>
+        <div class="prize-row bronze reveal"><div class="rank medal medal-bronze" aria-label="Bronze medal"></div><div class="desc">Third Place<small>+ 15% of all extra donations</small></div><div class="val">$375</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section parchment" id="schedule">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Mark Your Calendar</p>
+        <h2>Date &amp; Time</h2>
+        <div class="flourish"></div>
+      </div>
+      <div class="schedule-wrap">
+        <div class="sched-date parch-card reveal">
+          <div class="dow">Friday</div>
+          <div class="day">4</div>
+          <div class="mon">September 2026</div>
+          <div class="start">18:00 CEST</div>
+          <div class="local">Your local start time:<br><strong id="localTime">Calculating…</strong></div>
+          <div class="cal-buttons">
+            <a href="event.ics" download="na-vs-eu-battlegrounds-tournament.ics" class="btn btn-primary btn-cal">&#128197; Add to Calendar</a>
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=NA+vs+EU+Battlegrounds+Tournament&amp;dates=20260904T160000Z/20260904T200000Z&amp;details=16+Hearthstone+Battlegrounds+players%2C+only+1+winner.+Group+1+Friday%2C+Group+2+Saturday%2C+Finals+Sunday.+Watch+live%3A+https%3A%2F%2Ftwitch.tv%2Fshadybunny&amp;location=twitch.tv%2Fshadybunny" target="_blank" rel="noopener" class="btn btn-ghost btn-cal">Google Calendar</a>
+          </div>
+        </div>
+        <div class="sched-right reveal">
+          <ul class="day-list">
+            <li><span class="zone">Friday 4 Sept <small>Group 1 · 7 games</small></span><span class="time">18:00 CEST</span></li>
+            <li><span class="zone">Saturday 5 Sept <small>Group 2 · 7 games</small></span><span class="time">18:00 CEST</span></li>
+            <li><span class="zone">Sunday 6 Sept <small>Finals · check format</small></span><span class="time">18:00 CEST</span></li>
+          </ul>
+          <ul class="tz-list">
+            <li><span class="zone">Pacific <small>Los Angeles · PT</small></span><span class="time">9:00 AM</span></li>
+            <li><span class="zone">Eastern <small>New York · ET</small></span><span class="time">12:00 PM</span></li>
+            <li><span class="zone">UK <small>London · BST</small></span><span class="time">5:00 PM</span></li>
+            <li><span class="zone">Central Europe <small>Berlin · CEST</small></span><span class="time">6:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="watch">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Don't Miss It</p>
+        <h2>Where to Watch</h2>
+        <div class="flourish"></div>
+        <p>Live with full casting. Follow the channels so you get the go-live ping.</p>
+      </div>
+      <div class="live-banner reveal">
+        <a href="https://twitch.tv/shadybunny" target="_blank" rel="noopener" class="btn btn-live btn-live-big live-reveal" hidden>&#9679; LIVE NOW: Watch on Twitch</a>
+      </div>
+      <div class="watch-grid">
+        <a class="watch-card reveal" href="https://twitch.tv/shadybunny" target="_blank" rel="noopener"><span class="platform">▶ Twitch</span><span class="handle">/shadybunny</span><span class="role">Main broadcast · English</span></a>
+        <a class="watch-card reveal" href="https://youtube.com/@shadybunny" target="_blank" rel="noopener"><span class="platform">▶ YouTube</span><span class="handle">@shadybunny</span><span class="role">Simulcast &amp; VOD</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a href="#home" class="brand">NA <span class="vs">vs</span> EU</a>
+      <ul class="footer-socials">
+        <li><a href="#" target="_blank" rel="noopener">Twitter / X</a></li>
+        <li><a href="https://discord.gg/sj9gzg76pW" target="_blank" rel="noopener">Discord</a></li>
+        <li><a href="https://twitch.tv/shadybunny" target="_blank" rel="noopener">Twitch</a></li>
+      </ul>
+      <p class="footer-note">NA vs EU is a community event and is not affiliated with or endorsed by Blizzard Entertainment. Hearthstone and Battlegrounds are trademarks of Blizzard Entertainment, Inc. Game art and assets © Blizzard Entertainment, used under the Blizzard Fan Content Policy.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
