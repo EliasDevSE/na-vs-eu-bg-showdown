@@ -1,22 +1,22 @@
 var STANDINGS = {
-  stage: "Group 1 plays Friday 4 September, 18:00 CEST. Standings update between games.",
+  stage: "Group 1 plays Friday 4 September, 6 PM CEST. Standings update between games.",
   players: [
-    { name: "Jeef",      group: 1, points: 0 },
-    { name: "Beter",     group: 1, points: 0 },
-    { name: "Xiaoliaoo", group: 1, points: 0 },
-    { name: "Awedragon", group: 1, points: 0 },
-    { name: "Rechot",    group: 1, points: 0 },
-    { name: "TBD",       group: 1, points: 0 },
-    { name: "TBD",       group: 1, points: 0 },
-    { name: "TBD",       group: 1, points: 0 },
-    { name: "Rdu",       group: 2, points: 0 },
-    { name: "SuperJJ",   group: 2, points: 0 },
-    { name: "XQN",       group: 2, points: 0 },
-    { name: "Slyders",   group: 2, points: 0 },
-    { name: "Zorgo",     group: 2, points: 0 },
-    { name: "Oliech",    group: 2, points: 0 },
-    { name: "TBD",       group: 2, points: 0 },
-    { name: "TBD",       group: 2, points: 0 }
+    { name: "Jeef",      tag: "NA", points: 0 },
+    { name: "Beter",     tag: "NA", points: 0 },
+    { name: "Xiaoliaoo", tag: "NA", points: 0 },
+    { name: "Awedragon", tag: "NA", points: 0 },
+    { name: "Rechot",    tag: "NA", points: 0 },
+    { name: "TBD",       tag: "NA", points: 0 },
+    { name: "TBD",       tag: "NA", points: 0 },
+    { name: "TBD",       tag: "NA", points: 0 },
+    { name: "Rdu",       tag: "EU", points: 0 },
+    { name: "SuperJJ",   tag: "EU", points: 0 },
+    { name: "XQN",       tag: "EU", points: 0 },
+    { name: "Slyders",   tag: "EU", points: 0 },
+    { name: "Zorgo",     tag: "EU", points: 0 },
+    { name: "Oliech",    tag: "EU", points: 0 },
+    { name: "TBD",       tag: "EU", points: 0 },
+    { name: "TBD",       tag: "EU", points: 0 }
   ]
 };
 
@@ -49,7 +49,7 @@ var STANDINGS = {
       var li = document.createElement("li");
       li.className = "stand-row" + (i < 4 && !p.eliminated ? " top" : "") +
         (p.eliminated ? " out" : "") + (p.inCheck ? " check" : "");
-      var status = [p.group ? "Group " + p.group : "", p.eliminated ? "Eliminated" : (p.inCheck ? "In check" : "")]
+      var status = [p.tag || "", p.eliminated ? "Eliminated" : (p.inCheck ? "In check" : "")]
         .filter(Boolean).join(" · ");
       li.innerHTML =
         '<span class="place">' + (i + 1) + '</span>' +
