@@ -176,6 +176,7 @@ a { color: inherit; }
 .bg-hero img { width: 100%; height: auto; transition: transform .2s; filter: drop-shadow(0 9px 14px rgba(70,44,14,.45)); }
 .bg-hero:hover img { transform: translateY(-6px) scale(1.03); }
 .bg-hero-name { margin-top: 8px; font-family: var(--font-display); font-weight: 800; color: #2c1c0b; font-size: 1rem; line-height: 1.12; }
+.roster-note { text-align: center; margin: 34px 0 0; font-family: var(--font-display); font-style: italic; font-weight: 600; color: #7a5a2e; font-size: 1.05rem; }
 
 .parch-card {
   position: relative; border-radius: var(--radius); padding: 26px 28px;
