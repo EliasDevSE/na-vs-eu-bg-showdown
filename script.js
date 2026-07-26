@@ -101,9 +101,9 @@ var STANDINGS = {
   var local = document.getElementById("localTime");
   if (local && !isNaN(EVENT)) {
     try {
-      local.textContent = new Intl.DateTimeFormat(undefined, {
+      local.textContent = new Intl.DateTimeFormat("en-US", {
         weekday: "short", month: "short", day: "numeric",
-        hour: "numeric", minute: "2-digit", timeZoneName: "short"
+        hour: "numeric", minute: "2-digit", hour12: true, timeZoneName: "short"
       }).format(EVENT);
     } catch (e) {
       local.textContent = EVENT.toString();
