@@ -23,6 +23,20 @@ var STANDINGS = {
 (function () {
   "use strict";
 
+  var isApple = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
+  if (!isApple) {
+    var gcal = "https://calendar.google.com/calendar/render?action=TEMPLATE" +
+      "&text=NA+vs+EU+Battlegrounds+Tournament" +
+      "&dates=20260904T160000Z/20260904T200000Z" +
+      "&details=16+Hearthstone+Battlegrounds+players%2C+only+1+winner.+Group+1+Friday%2C+Group+2+Saturday%2C+Finals+Sunday.+Watch+live%3A+https%3A%2F%2Ftwitch.tv%2Fshadybunny" +
+      "&location=twitch.tv%2Fshadybunny";
+    document.querySelectorAll(".cal-open").forEach(function (a) {
+      a.href = gcal;
+      a.target = "_blank";
+      a.rel = "noopener";
+    });
+  }
+
   var poolAmount = document.getElementById("poolAmount");
   function updatePool() {
     if (!poolAmount) return;
