@@ -267,6 +267,22 @@ a { color: inherit; }
 .watch-card .platform { font-family: var(--font-head); font-weight: 700; text-transform: uppercase; letter-spacing: .1em; font-size: .8rem; color: var(--gold-lite); }
 .watch-card .handle { font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; }
 .watch-card .role { color: #e8c9b6; font-size: .9rem; }
+.watch-divider { display: flex; align-items: center; justify-content: center; gap: 16px; max-width: 860px; margin: 0 auto 22px; }
+.watch-grid + .watch-divider { margin-top: 38px; }
+.watch-divider::before, .watch-divider::after { content: ""; height: 2px; flex: 1; max-width: 220px; }
+.watch-divider::before { background: linear-gradient(90deg, transparent, var(--gold-deep)); }
+.watch-divider::after { background: linear-gradient(90deg, var(--gold-deep), transparent); }
+.watch-divider span { font-family: var(--font-head); font-weight: 700; text-transform: uppercase; letter-spacing: .2em; font-size: .82rem; color: var(--gold); }
+.stream-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; max-width: 860px; margin: 0 auto; }
+.stream-chip {
+  font-family: var(--font-display); font-weight: 700; font-size: .98rem; text-decoration: none; color: #f3e7d2;
+  padding: 11px 20px; border-radius: 10px; border: 1px solid var(--gold-deep);
+  background: linear-gradient(180deg, rgba(50,32,60,.55), rgba(24,14,30,.65));
+  box-shadow: inset 0 1px 0 rgba(255,236,190,.14), 0 4px 10px rgba(0,0,0,.35);
+  transition: transform .15s, border-color .2s, color .2s;
+}
+.stream-chip::before { content: "▶ "; color: var(--purple-lo); font-size: .8em; }
+.stream-chip:hover { transform: translateY(-3px); border-color: var(--gold-lite); color: #fff; }
 
 .site-footer { padding: 44px 0; text-align: center; color: #e9d3a8; background: #3a2410 url("assets/ui/wood.jpg") center/cover; border-top: 3px solid var(--gold-dark); box-shadow: inset 0 3px 0 rgba(255,236,190,.14); }
 .site-footer .brand { font-size: 1.5rem; text-decoration: none; }
