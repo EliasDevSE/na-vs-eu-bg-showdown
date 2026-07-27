@@ -15,7 +15,7 @@ var STANDINGS = {
     { name: "Slyders",   tag: "EU", points: 0 },
     { name: "Zorgo",     tag: "EU", points: 0 },
     { name: "Oliech",    tag: "EU", points: 0 },
-    { name: "TBD",       tag: "EU", points: 0 },
+    { name: "Sevel07",   tag: "EU", points: 0 },
     { name: "TBD",       tag: "EU", points: 0 }
   ]
 };
