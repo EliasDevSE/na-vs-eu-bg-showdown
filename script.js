@@ -5,10 +5,10 @@ var STANDINGS = {
     { name: "Beter",     tag: "NA", points: 0 },
     { name: "Xiaoliaoo", tag: "NA", points: 0 },
     { name: "Awedragon", tag: "NA", points: 0 },
-    { name: "Rechot",    tag: "NA", points: 0 },
-    { name: "TBD",       tag: "NA", points: 0 },
-    { name: "TBD",       tag: "NA", points: 0 },
-    { name: "TBD",       tag: "NA", points: 0 },
+    { name: "Rechot",      tag: "NA", points: 0 },
+    { name: "Waterlooooo", tag: "NA", points: 0 },
+    { name: "TBD",         tag: "NA", points: 0 },
+    { name: "TBD",         tag: "NA", points: 0 },
     { name: "Rdu",       tag: "EU", points: 0 },
     { name: "SuperJJ",   tag: "EU", points: 0 },
     { name: "TBD",       tag: "EU", points: 0 },
@@ -16,7 +16,7 @@ var STANDINGS = {
     { name: "Zorgo",     tag: "EU", points: 0 },
     { name: "Oliech",    tag: "EU", points: 0 },
     { name: "Sevel07",   tag: "EU", points: 0 },
-    { name: "TBD",       tag: "EU", points: 0 }
+    { name: "GuDDummit", tag: "EU", points: 0 }
   ]
 };
 
