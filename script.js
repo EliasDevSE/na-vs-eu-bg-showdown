@@ -7,7 +7,7 @@ var STANDINGS = {
     { name: "Awedragon", tag: "NA", points: 0 },
     { name: "Rechot",      tag: "NA", points: 0 },
     { name: "Waterlooooo", tag: "NA", points: 0 },
-    { name: "TBD",         tag: "NA", points: 0 },
+    { name: "WobbleWeezy", tag: "NA", points: 0 },
     { name: "TBD",         tag: "NA", points: 0 },
     { name: "Rdu",       tag: "EU", points: 0 },
     { name: "SuperJJ",   tag: "EU", points: 0 },
