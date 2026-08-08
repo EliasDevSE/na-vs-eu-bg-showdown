@@ -46,6 +46,12 @@ var STANDINGS = {
       var raised = d.session["tip-goal"].amount;
       var symbol = (d.tipping && d.tipping.currency && d.tipping.currency.symbol) || "€";
       poolAmount.textContent = symbol + raised.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      var extra = Math.max(0, raised - 2500);
+      var splits = { prize1: 1500 + extra * 0.60, prize2: 625 + extra * 0.25, prize3: 375 + extra * 0.15 };
+      Object.keys(splits).forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el) el.textContent = symbol + Math.round(splits[id]).toLocaleString("en-US");
+      });
     }).catch(function () {});
   }
   updatePool();
